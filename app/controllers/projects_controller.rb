@@ -6,16 +6,18 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.create(
-      author_id: current_user.id,
-      name: :name,
-      amount: :amount
-    )
+    @project = current_user.projects.create(proj_params)
 
     if @project.save
       redirect_to '/welcome'
     else
       render :new
     end
+  end
+
+  private
+
+  def proj_params
+    params.require(:project).permit(:author_id, :name, :amount)
   end
 end
