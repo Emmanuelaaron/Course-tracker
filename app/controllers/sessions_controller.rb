@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     @user = User.find_by(username: params[:username])
     if @user
       session[:user_id] = @user.id
-      redirect_to '/projects/new'
+      redirect_to '/profile'
     else
       redirect_to '/login'
     end
@@ -13,5 +13,5 @@ class SessionsController < ApplicationController
 
   def login; end
 
-  def welcome; end
+  def profile; end
 end

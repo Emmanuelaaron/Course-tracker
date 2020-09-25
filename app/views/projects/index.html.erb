@@ -1,0 +1,10 @@
+<h6>Transactions</h6>
+<% @projects.each do |project|%>
+    <ul>
+        <li><%=project.name%>, <%=project.amount%> days</li>
+    </ul>
+    
+<%end%>
+<span>
+    <%= link_to 'Add Project', new_project_path%>
+</span>

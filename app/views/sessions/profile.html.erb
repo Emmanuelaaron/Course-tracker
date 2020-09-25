@@ -1,0 +1,14 @@
+
+<% if logged_in? %>
+    <h5><%= current_user.username %></h5>
+    <ul>
+        <li><%= link_to 'projects', projects_path%>
+    </ul>
+    <p>Projects</p>
+    <%# <p>External projects</p>
+    <p>Course modules</p> %>
+
+<% else%>
+    <%= button_to "Login", '/login', method: :get%>
+    <%= button_to "Sign Up", '/users/new', method: :get%>
+<%end%>
