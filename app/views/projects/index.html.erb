@@ -1,4 +1,14 @@
-<h6>Transactions</h6>
+<header class="row">
+    <div class="d-flex  flex-row justify-content-around pt-5 pb-5 col-12 proj">
+        <div class=""><i class="fa fa-bars"></i></div>
+        <div>PROJECTS</div>
+        <div><i class="fa fa-search"></i></div>
+    </div>
+    <div class="col-12 d-flex most-recent justify-content-end  mr-5 pr-5">
+        <div>Most recent</div>
+        <div class="ml-5">Most acient</div>
+    </div>
+</header>
 <% @projects.each do |project|%>
     <ul>
         <li><%=project.name%>, <%=project.amount%> days</li>

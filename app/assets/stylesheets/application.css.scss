@@ -13,6 +13,19 @@
  */
 
  @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import 'font-awesome';
+
+ header .proj{
+     font-size: 78px;
+ }
+ header {
+     background-color: rgba(6, 101, 243, 0.589);
+     color: aliceblue;
+ }
+ header .most-recent {
+     font-size: 39px;
+ }
 
 body{
     // background-color: #060253;
