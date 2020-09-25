@@ -11,6 +11,15 @@ class ApplicationController < ActionController::Base
   end
 
   def authorized
-    redirect_to '/welcome' unless logged_in?
+    redirect_to '/profile' unless logged_in?
   end
+
+  def total_days
+    my_total = 0
+    current_user.projects.each do |project|
+      my_total += project.amount
+    end
+    my_total
+  end
+  
 end

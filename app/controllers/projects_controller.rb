@@ -7,13 +7,14 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = current_user.projects.all
+    @days=total_days
   end
 
   def create
     @project = current_user.projects.create(proj_params)
 
     if @project.save
-      redirect_to '/welcome'
+      redirect_to '/profile'
     else
       render :new
     end

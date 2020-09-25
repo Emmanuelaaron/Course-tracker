@@ -9,6 +9,10 @@
         <div class="ml-5">Most acient</div>
     </div>
 </header>
+<div class="d-flex days flex-row justify-content-between bg-light col-12 py-5">
+    <div>Total days</div>
+    <div><%=@days%></div>
+</div>
 <% @projects.each do |project|%>
     <ul>
         <li><%=project.name%>, <%=project.amount%> days</li>
