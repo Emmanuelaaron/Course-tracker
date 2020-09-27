@@ -9,16 +9,19 @@
         <div class="ml-5">Most acient</div>
     </div>
 </header>
-<div class="d-flex days flex-row justify-content-between bg-light col-12 py-5">
+<div class="d-flex days flex-row justify-content-between bg-light col-12 py-5 mb-5">
     <div>Total days</div>
     <div><%=@days%></div>
 </div>
 <% @projects.each do |project|%>
-    <ul>
-        <li><%=project.name%>, <%=project.amount%> days</li>
-    </ul>
+    <div class="profile_content bg-light mr-3 ml-3 d-flex justify-content-between pl-4 pr-4 align-items-center mb-4">
+        <div><%=project.name%></div> 
+        <div><%=project.amount%> days</div>
+    </div>
     
 <%end%>
-<span>
-    <%= link_to 'Add Project', new_project_path%>
-</span>
+<footer class="d-flex align-items-center justify-content-center">
+    <span class="border border-white span-footer">
+        <%= link_to 'Add Project', new_project_path%>
+    </span>
+</footer>

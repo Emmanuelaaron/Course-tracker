@@ -29,8 +29,36 @@
 
  .days {
      font-size: 37px;
+     width: 100%;
  }
 
 body{
    background-color: lavender;
 } 
+
+.profile_content {
+    height: 115px;
+    font-size: 42px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: green; 
+    font-size: 53px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.span-footer {
+    // background-color: red;
+    width: 95%;
+    text-align: center;
+    height: 77%;
+}
+
