@@ -12,53 +12,53 @@
  *
  */
 
- @import "bootstrap";
- @import "font-awesome-sprockets";
- @import 'font-awesome';
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import 'font-awesome';
 
- header .proj{
-     font-size: 78px;
- }
- header {
-     background-color: rgba(2, 50, 122, 0.589);
-     color: aliceblue;
- }
- header .most-recent {
-     font-size: 39px;
- }
+header .proj {
+  font-size: 78px;
+}
 
- .days {
-     font-size: 37px;
-     width: 100%;
- }
+header {
+  background-color: rgba(2, 50, 122, 0.589);
+  color: aliceblue;
+}
 
-body{
-   background-color: lavender;
-} 
+header .most-recent {
+  font-size: 39px;
+}
+
+.days {
+  font-size: 37px;
+  width: 100%;
+}
+
+body {
+  background-color: lavender;
+}
 
 .profile_content {
-    height: 115px;
-    font-size: 42px;
+  height: 115px;
+  font-size: 42px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 130px;
-    background-color: green; 
-    font-size: 53px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  background-color: green;
+  font-size: 53px;
 }
 
 footer a {
-    text-decoration: none;
-    color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .span-footer {
-    // background-color: red;
-    width: 95%;
-    text-align: center;
-    height: 77%;
+  width: 95%;
+  text-align: center;
+  height: 77%;
 }
-

@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = current_user.projects.all
-    @days=total_days
+    @days = total_days
   end
 
   def create

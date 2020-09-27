@@ -21,5 +21,4 @@ class ApplicationController < ActionController::Base
     end
     my_total
   end
-  
 end
