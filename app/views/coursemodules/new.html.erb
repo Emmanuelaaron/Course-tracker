@@ -1,0 +1,8 @@
+<h1>Hello</h2>
+
+<%= form_for @coursemodule do |f|%>
+  <%= f.label :name, class:'form-control'%><br>
+  <%= f.text_field :name, class:'form-control'%><br>
+  <%= f.file_field :avatar %>
+  <%= f.submit %>
+<%end%>

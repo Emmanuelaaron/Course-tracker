@@ -1,0 +1,7 @@
+<h1>My modules</h1>
+<% @coursemodules.each do |coursemodule|%>
+    <div class='row, justify-content-between'>
+        <img src=<%=url_for(coursemodule.avatar)%> class='col-2'>
+        <%=coursemodule.name%>
+    </div>
+<%end%>
