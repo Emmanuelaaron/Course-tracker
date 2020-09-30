@@ -20,6 +20,17 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def show
+    @project = current_user.projects.find(params[:id])
+    @coursemodules = current_user.coursemodules.all
+  end
+
+  def add_internal_project
+    @project = current_user.projects.find(params[:project_id])
+    @project.internalprojects.create(coursemodule_id: params[:coursemodule_id])
+    render :new
+  end
+
   private
 
   def proj_params

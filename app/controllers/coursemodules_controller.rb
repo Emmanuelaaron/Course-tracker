@@ -6,11 +6,11 @@ class CoursemodulesController < ApplicationController
   end
 
   def index
-    @coursemodules = Coursemodule.all
+    @coursemodules = current_user.coursemodules.all
   end
 
   def create
-    @coursemodule = Coursemodule.create(coursemodule_params)
+    @coursemodule = current_user.coursemodules.create(coursemodule_params)
     if @coursemodule.save
       redirect_to '/profile'
     else

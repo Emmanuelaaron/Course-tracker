@@ -1,0 +1,6 @@
+<h1><%= @project.name %></h1>
+<h1><%= @project.amount %> days</h1>
+<% @coursemodules.each do |coursemodule|%>
+    <div><%= coursemodule.name %> <%= link_to 'Add to this module', addinternalproject_path({:project_id => @project.id, :coursemodule_id => coursemodule.id}), method: :post%></div>
+
+<% end %>
