@@ -28,7 +28,7 @@ class ProjectsController < ApplicationController
   def add_internal_project
     @project = current_user.projects.find(params[:project_id])
     @project.internalprojects.create(coursemodule_id: params[:coursemodule_id])
-    render :new
+    redirect_to project_path(params[:project_id])
   end
 
   private
