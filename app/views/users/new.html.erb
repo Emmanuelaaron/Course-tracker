@@ -1,8 +1,22 @@
-<h1>Sign Up</h1>
-<%= form_for @user do |f|%>
-  <%= f.label :username, class:'form-control'%><br>
-  <%= f.text_field :username, class:'form-control'%><br>
-  <%= f.label :email, class:'form-control'%><br>
-  <%= f.email_field :email, class:'form-control'%><br>
-  <%= f.submit%>
-<%end%>
+<header class="row">
+    <div class="d-flex  flex-row justify-content-around pt-5 pb-5 col-12 proj">
+        <div class=""><i class="fa fa-bars"></i></div>
+        <div>Course Tracker</div>
+        <div><i class="fa fa-search"></i></div>
+    </div>
+</header>
+
+<%# <h1>Sign Up</h1> %>
+<div class="signup">
+  <%= form_for @user do |f|%>
+    <%= f.text_field :username, class:'form-control signup-input', placeholder: "User name"%><br>
+    <%= f.email_field :email, class:'form-control signup-input', placeholder: "Email"%><br>
+    <%= f.submit 'signup', class:'form-control signup-input'%>
+  <%end%>
+</div>
+
+<footer class="d-flex align-items-center justify-content-center">
+   <span class="border border-white span-footer">
+      <%= link_to 'Log In', login_path%>
+   </span>
+</footer>
