@@ -67,14 +67,16 @@ footer a {
   margin: 0 auto;
 }
 
-.login, .signup {
+.login,
+.signup {
   margin: auto;
   width: 70%;
   padding: 10px;
   margin-top: 24vh;
 }
 
-.login-input, .signup-input {
+.login-input,
+.signup-input {
   height: 103px;
   font-size: 30px;
 }
@@ -97,4 +99,9 @@ footer a {
 .profile-page div a {
   text-decoration: none;
   color: lavender;
+}
+
+.projects-display {
+  background-color: lavender;
+  padding-bottom: 121%;
 }
