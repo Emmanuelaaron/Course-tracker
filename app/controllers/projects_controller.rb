@@ -31,6 +31,15 @@ class ProjectsController < ApplicationController
     redirect_to project_path(params[:project_id])
   end
 
+  def internal_projects
+    courses = current_user.coursemodules
+    @internalprojects = []
+    courses.each do |course|
+      @internalprojects.push(course.projects) unless @internalprojects.include? course
+    end
+    @internalprojects
+  end
+
   private
 
   def proj_params

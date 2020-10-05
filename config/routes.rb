@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy'
   get 'profile', to: 'sessions#profile'
   post 'addinternalproject', to: 'projects#add_internal_project'
-  root to: 'sessions#new'
+  get 'getinternalprojects', to: 'projects#internal_projects'
+  root to: 'sessions#profile'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
