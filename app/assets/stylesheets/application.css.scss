@@ -21,7 +21,7 @@ header .proj {
 }
 
 header {
-  background-color: rgba(2, 50, 122, 0.589);
+  // background-color: rgba(2, 50, 122, 0.589);
   color: aliceblue;
 }
 
@@ -35,7 +35,7 @@ header .most-recent {
 }
 
 body {
-  background-color: lavender;
+  background-color: blue
 }
 
 .profile_content {
@@ -88,4 +88,13 @@ footer a {
   height: 200px;
   border-radius: 50%;
   margin-top: 10%;
+}
+
+.profile h5 {
+  font-size: 64px;
+}
+
+.profile-page div a {
+  text-decoration: none; 
+  color: lavender; 
 }
