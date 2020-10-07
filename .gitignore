@@ -27,3 +27,5 @@
 /config/master.key
 package-lock.json
 package.json
+
+coverage
