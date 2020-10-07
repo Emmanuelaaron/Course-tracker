@@ -1,24 +1,43 @@
-# README
+# Course Trcker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a ruby on rails mobile web Microverse Captstone Project. It is a called a course module tracker. This tracker enables learners to record the learning projects they have completed and can be added to their respective course modules
+## Built With
 
-Things you may want to cover:
+- Ruby on rails,
+- Bootstrap
+- RSpec
 
-* Ruby version
+## Live Demo
 
-* System dependencies
+[Live Demo Link](https://course-tracker1.herokuapp.com/)
 
-* Configuration
 
-* Database creation
+## Getting Started
+Clone this repo on your local machine
 
-* Database initialization
+### Prerequisites
+To make this repository working in your local machine you need only a browser.
 
-* How to run the test suite
+## Authors
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Emmanuel Isabirye**
 
-* Deployment instructions
+- Github: [@EmmanuelAaron](https://github.com/Emmanuelaaron)
+- Twitter: [@EmmanuelAaron](https://twitter.com/EmmanuelIsabir1)
+- Linkedin: [@EmmanuelAaron](https://www.linkedin.com/in/fullstackwebdev-emma/)
 
-* ...
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Emmanuelaaron/transactions/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed. 
