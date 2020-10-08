@@ -13,7 +13,19 @@
 
 
 ## Getting Started
-Clone this repo on your local machine
+- Clone this repo on your local machine
+    `git clone https://github.com/Emmanuelaaron/Course-tracker.git`
+- cd into this repository
+    `cd Course-tracker`
+- Run the following commands in your terminal
+    ```-bundle install
+    -rails db:create
+    -rails db:migrate
+    -rails server
+    ```
+- By now the server is running
+- Open `127.0.0.1:300` in your browser
+- By now thw program should have been launched in your browser
 
 ### Prerequisites
 To make this repository working in your local machine you need only a browser.
