@@ -12,7 +12,7 @@ class CoursemodulesController < ApplicationController
   def create
     @coursemodule = current_user.coursemodules.create(coursemodule_params)
     if @coursemodule.save
-      redirect_to '/profile'
+      redirect_to coursemodules_path
     else
       render :new
     end
