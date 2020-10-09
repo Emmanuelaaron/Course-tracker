@@ -1,6 +1,6 @@
 require 'rails_helper'
 RSpec.describe 'External projects', type: :feature do
-  scenario 'creating a project user', js: true do
+  scenario 'creating a project user' do
     visit new_user_path
     fill_in 'User name', with: 'Emmanuel'
     fill_in 'Email', with: 'emmanuel@gmail.com'
@@ -16,7 +16,7 @@ RSpec.describe 'External projects', type: :feature do
     expect(page).to have_content('External projects')
   end
 
-  scenario 'displaying all projects', js: true do
+  scenario 'displaying all projects' do
     visit new_user_path
     fill_in 'User name', with: 'Emmanuel'
     fill_in 'Email', with: 'emmanuel@gmail.com'
@@ -33,7 +33,7 @@ RSpec.describe 'External projects', type: :feature do
     expect(page).to have_content('React')
   end
 
-  scenario 'displaying a specific project', js: true do
+  scenario 'displaying a specific project' do
     visit new_user_path
     fill_in 'User name', with: 'Emmanuel'
     fill_in 'Email', with: 'emmanuel@gmail.com'
