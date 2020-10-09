@@ -49,6 +49,10 @@ Feel free to check the [issues page](https://github.com/Emmanuelaaron/transactio
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgements
+
+Greate thanks to [Gregory Vela](https://www.behance.net/gregoirevella) for such a wonderful design
+
 
 ## 📝 License
 

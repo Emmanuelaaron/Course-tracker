@@ -28,6 +28,11 @@ header .most-recent {
   font-size: 39px;
 }
 
+footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 .most-recent a {
   text-decoration: none;
   color: aliceblue;
@@ -54,11 +59,6 @@ footer {
   height: 130px;
   background-color: green;
   font-size: 53px;
-}
-
-footer a {
-  text-decoration: none;
-  color: aliceblue;
 }
 
 .span-footer {
