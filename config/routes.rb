@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   resources :users, only: [:new, :create]
-  resources :projects
-  resources :coursemodules
-  # resources :internalprojects, only: [:create]
+  resources :projects, only: [:new, :index, :create, :show]
+  resources :coursemodules, only: [:new, :index, :create]
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
