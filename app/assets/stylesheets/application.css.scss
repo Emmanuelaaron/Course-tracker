@@ -21,12 +21,16 @@ header .proj {
 }
 
 header {
-  // background-color: rgba(2, 50, 122, 0.589);
   color: aliceblue;
 }
 
 header .most-recent {
   font-size: 39px;
+}
+
+.most-recent a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .days {
@@ -109,4 +113,18 @@ footer a {
 .coursemodule-display {
   background-color: lavender;
   padding-bottom: 121%;
+}
+
+.colorss {
+  // background-color: red;
+  min-width: 100%;
+}
+
+.colorss div {
+  font-size: 39px;
+}
+
+.colorss div a {
+  color: aliceblue;
+  text-decoration: none;
 }

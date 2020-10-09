@@ -1,6 +1,5 @@
 class InternalprojectsController < ApplicationController
   def create
-    # @module = Coursemodule.find(params[:id])
     @project = Internalproject.create(internalproject_params)
   end
 
