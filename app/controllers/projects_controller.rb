@@ -45,4 +45,8 @@ class ProjectsController < ApplicationController
   def proj_params
     params.require(:project).permit(:author_id, :name, :amount)
   end
+
+  def internal_proj_params
+    params.require(:project).permit(:project_id, :coursemodule_id)
+  end
 end
