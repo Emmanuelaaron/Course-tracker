@@ -1,3 +1,20 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.project-input {
+  height: 103px;
+  font-size: 30px;
+}
+
+.create-project {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  margin-top: 24vh;
+}
+
+.projects-display {
+  background-color: lavender;
+  padding-bottom: 121%;
+}
