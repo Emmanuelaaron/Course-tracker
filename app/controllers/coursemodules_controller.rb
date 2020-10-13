@@ -6,7 +6,7 @@ class CoursemodulesController < ApplicationController
   end
 
   def index
-    @coursemodules = current_user.coursemodules.all
+    @coursemodules = current_user.coursemodules.all.includes([:avatar_attachment])
   end
 
   def create

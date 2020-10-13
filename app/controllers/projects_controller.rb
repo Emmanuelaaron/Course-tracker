@@ -6,7 +6,7 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects = current_user.projects.all
+    @projects = current_user.projects.users_projects
     @days = total_days
   end
 
@@ -32,7 +32,7 @@ class ProjectsController < ApplicationController
   end
 
   def internal_projects
-    courses = current_user.coursemodules
+    courses = current_user.coursemodules.all.includes(:projects)
     @internalprojects = []
     courses.each do |course|
       @internalprojects.push(course.projects) unless @internalprojects.include? course
