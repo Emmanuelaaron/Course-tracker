@@ -5,7 +5,7 @@ RSpec.describe 'User', type: :feature do
     fill_in 'User name', with: 'Emmanuel'
     fill_in 'Email', with: 'emmanuel@gmail.com'
     click_on 'signup'
-    expect(page).to have_content('Welcome to the the course tracker')
+    expect(page).to have_content('Sucessfully signed up')
   end
 
   scenario 'signingup user with incorrect credentials' do
