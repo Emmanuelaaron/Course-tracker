@@ -8,6 +8,11 @@
 </header>
 
 <div class="create-project">
+  <%if @project.errors%>
+    <%@project.errors.full_messages.each do |error|%>
+        <div class="errors"><%=error %></div>
+    <%end%>
+  <%end%>
   <%= form_for @project do |f|%>
     <%= f.text_field :name, class:'form-control project-input', placeholder: "Project name"%><br>
     <%= f.number_field :amount, class:'form-control project-input', placeholder: "Number of days"%><br>

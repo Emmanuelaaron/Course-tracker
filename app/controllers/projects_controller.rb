@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
     @project = current_user.projects.create(proj_params)
 
     if @project.save
-      redirect_to '/profile'
+      redirect_to projects_path, notice: "Sucessfully created #{@project.name}!"
     else
       render :new
     end

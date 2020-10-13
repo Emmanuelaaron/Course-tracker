@@ -7,6 +7,11 @@
 </header>
 
 <div class="signup">
+  <%if @user.errors%>
+    <%@user.errors.full_messages.each do |error|%>
+        <div class="errors"><%=error %></div>
+    <%end%>
+  <%end%>
   <%= form_for @user do |f|%>
     <%= f.text_field :username, class:'form-control signup-input', placeholder: "User name"%><br>
     <%= f.email_field :email, class:'form-control signup-input', placeholder: "Email"%><br>
