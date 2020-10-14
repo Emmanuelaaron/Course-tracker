@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
   before_action :authorized
+  before_action :set_internal_project_variables, only: [:add_internal_project]
+  before_action :set_show_project_variable, only: [:show]
 
   def new
     @project = Project.new
@@ -21,18 +23,18 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @project = current_user.projects.find(params[:id])
-    @coursemodules = current_user.coursemodules.all
+    @project = current_user.projects.find(@id)
+    @coursemodules = current_user.coursemodules.includes(:projects).all
   end
 
   def add_internal_project
-    @project = current_user.projects.find(params[:project_id])
-    @project.internalprojects.create(coursemodule_id: params[:coursemodule_id])
+    @project = current_user.projects.find(@project_id)
+    @project.internalprojects.create(coursemodule_id: @coursemodule_id)
     redirect_to projects_path
   end
 
   def internal_projects
-    courses = current_user.coursemodules.all.includes(:projects)
+    courses = current_user.coursemodules.includes(:projects).all
     @internalprojects = []
     courses.each do |course|
       @internalprojects.push(course.projects) unless @internalprojects.include? course
@@ -48,5 +50,14 @@ class ProjectsController < ApplicationController
 
   def internal_proj_params
     params.require(:project).permit(:project_id, :coursemodule_id)
+  end
+
+  def set_internal_project_variables
+    @project_id = params[:project_id]
+    @coursemodule_id = params[:coursemodule_id]
+  end
+
+  def set_show_project_variable
+    @id = params[:id]
   end
 end

@@ -1,13 +1,14 @@
 class SessionsController < ApplicationController
+  before_action :session_params, only: [:create]
   def new; end
 
   def create
-    @user = User.find_by(username: params[:username])
+    @user = User.find_by(username: @username)
     if @user
       session[:user_id] = @user.id
       redirect_to '/profile'
     else
-      redirect_to '/login'
+      redirect_to '/login', notice: 'User does not exist!'
     end
   end
 
@@ -20,4 +21,10 @@ class SessionsController < ApplicationController
   def login; end
 
   def profile; end
+
+  private
+
+  def session_params
+    @username = params[:username]
+  end
 end
