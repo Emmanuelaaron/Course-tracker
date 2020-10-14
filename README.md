@@ -1,6 +1,9 @@
 # Course Trcker
 
 > This is a ruby on rails mobile web Microverse Captstone Project. It is a called a course module tracker. This tracker enables learners to record the learning projects they have completed and can be added to their respective course modules
+
+![screenshot](app/assets/images/Screenshot_20201014-070634.png)
+
 ## Built With
 
 - Ruby on rails,
