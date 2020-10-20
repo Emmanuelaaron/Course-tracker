@@ -37,7 +37,7 @@ class ProjectsController < ApplicationController
     courses = current_user.coursemodules.includes(:projects).all
     @internalprojects = []
     courses.each do |course|
-      @internalprojects.push(course.projects) unless @internalprojects.include? course
+      @internalprojects.push(course.projects)
     end
     @internalprojects
   end

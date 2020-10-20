@@ -9,23 +9,14 @@
 
 
 <div class="projects-display pt-5">
-    <% if @internalprojects.empty?%>
-        <%= render :partial => 'no_projects'%>
-    <%else%>
-        <%@internalprojects.first.all.each do |project|%>
-            <div class='row, justify-content-between'>
-                <div class="profile_content bg-light mr-3 ml-3 d-flex justify-content-between pl-4 pr-4 align-items-center mb-4">
-                    <div>
-                        <img src=<%=url_for(project.coursemodules.first.avatar)%> class='col-2'>
-                    </div>
-                    <%=project.name%>
-                </div>
-            </div>
-        <%end%>
-    <%end%>
+    <%=display_internal_projects(@internalprojects)%>
 </div>
+<%
+=begin%>
 <footer class="d-flex align-items-center justify-content-center">
     <span class="border border-white span-footer">
         <%= link_to 'Add Project', new_project_path%>
     </span>
 </footer>
+<%
+=end%>
