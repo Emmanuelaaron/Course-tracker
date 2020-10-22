@@ -42,6 +42,10 @@ class ProjectsController < ApplicationController
     @internalprojects
   end
 
+  def all_projects
+    @projects = current_user.projects
+  end
+
   private
 
   def proj_params

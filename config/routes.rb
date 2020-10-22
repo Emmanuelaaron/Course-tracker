@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'profile', to: 'sessions#profile'
   post 'addinternalproject', to: 'projects#add_internal_project'
   get 'getinternalprojects', to: 'projects#internal_projects'
+  get 'getprojects', to: 'projects#all_projects'
   root to: 'sessions#profile'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
