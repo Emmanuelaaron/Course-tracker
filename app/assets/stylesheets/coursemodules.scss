@@ -1,0 +1,32 @@
+// Place all the styles related to the coursemodules controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.coursemodule-display {
+  background-color: lavender;
+  padding-bottom: 121%;
+}
+
+.create-course {
+  height: 103px;
+  font-size: 30px;
+}
+
+.coursemodule {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  margin-top: 24vh;
+}
+
+.colorss {
+  min-width: 100%;
+}
+
+.colorss div {
+  font-size: 39px;
+}
+
+.colorss div a {
+  color: aliceblue;
+  text-decoration: none;
+}

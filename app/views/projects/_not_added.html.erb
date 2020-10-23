@@ -1,0 +1,7 @@
+<div>
+    <%= link_to 'Add to this module', addinternalproject_path(
+        {
+            :project_id => @project.id, :coursemodule_id => coursemodule.id
+        }
+    ), method: :post%>
+</div>

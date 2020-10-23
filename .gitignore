@@ -19,9 +19,13 @@
 
 /node_modules
 /yarn-error.log
-
+yarn.lock
 /public/assets
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+package-lock.json
+package.json
+
+coverage

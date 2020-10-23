@@ -1,0 +1,26 @@
+<header>
+    <div class="d-flex  flex-row justify-content-around pt-5 pb-5 col-12 proj">
+        <div class=""><i class="fa fa-bars"></i></div>
+        <div>PROJECTS</div>
+        <div><i class="fa fa-search"></i></div>
+    </div>
+    <div class="d-flex most-recent justify-content-end  mr-5 pr-5 pb-5">
+        <div><%=link_to 'Home', profile_path%></div>
+        <div class="ml-5"><%=link_to 'Logout', logout_path%></div>
+    </div>
+</header>
+<div class="d-flex days flex-row justify-content-between bg-light col-12 py-5 pl-4 pr-4 ">
+    <div>Total days</div>
+    <div><%=@days%></div>
+</div>
+<div class="projects-display pt-5">
+    <% @projects.each do |project|%>
+         <%=externalprojects(project)%>
+        
+    <%end%>
+</div>
+<footer class="d-flex align-items-center justify-content-center">
+    <span class="border border-white span-footer">
+        <%= link_to 'Add Project', new_project_path%>
+    </span>
+</footer>
